@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Etiketleri</title>
+</head>
+<body>
+    <form>
+        <label for="Ad">Adınız:</label>
+        <input type="text" name="Ad" id="Ad" required placeholder="Adınızı girin"> <br><br>
+
+        <label for="Soyad">Soyad:</label>
+        <input type="text" name="Soyad" id="Soyad" required><br><br>
+
+        <label for="Sorun">Sorun:</label>
+        <select name="Sorun" id="Sorun" >
+            <option value="">İstek</option>
+            <option value="">Şikayet</option>
+        </select><br><br>
+
+        <label for="Mesaj">Mesajınız:</label><br>
+        <textarea name="Mesaj" id="Mesaj" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" >
+    </form>
+</body>
+</html>
