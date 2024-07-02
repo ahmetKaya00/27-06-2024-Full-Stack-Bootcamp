@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClass</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            text-align: center;
+        }
+        .btn{
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            background-color: red;
+        }
+        .btn-active:active{
+            background-color: blue;
+        }
+        .input:focus{
+            border: 1px solid #4caf50;
+            outline: none;
+        }
+        .list li:nth-child(2){
+            color: red;
+        }
+        .list li:first-child{
+            color: yellow;
+        }
+        .list li:last-child{
+            text-decoration: underline;
+        }
+
+        .checkbox:checked + label {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">Hover over me!</button>
+        <button class="btn btn-active">Active Button</button>
+        <input type="text" class="input" placeholder="Focus on me!">
+
+        <ul class="list">
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Thirt Item</li>
+        </ul>
+
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox">Check Me!</label>
+    </div>
+</body>
+</html>
