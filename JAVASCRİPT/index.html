@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+       /* 
+       console.log('Merhaba Dünya')
+       console.error('Bir hata oluştu.')
+       
+       alert('Merhaba Dünya!');
+
+       let isim = prompt('Adınızı Giriniz:');
+       console.log('Merhaba ' + isim);
+        
+
+        var tamSayi = 42;
+        var ondalikliSayi = 3.14;
+
+        var isim = "Ahmet";
+        var isim = 'Mehmet';
+
+        var dogru = true;
+        var yanlis = false;
+
+        var tanimsizDeger;
+
+        let yas = 35;
+     //   let yas = 25;
+        yas = "Ahmet";
+
+        const dogumYili = 1987;
+       // const dogumYili =1990;
+       // dogumYili = 1990;
+
+       let sayi = 35;
+       let sayiString = String(sayi);
+        
+        console.log(sayiString)
+        console.log(typeof sayiString)
+
+        let sayi2 = 123;
+        let sayi2String = sayi2.toString();
+        console.log(sayi2String)
+        console.log(typeof sayi2String)
+
+        let stringSayi = "123";
+        let sayi3 = Number(stringSayi);
+        console.log(sayi3)
+        console.log(typeof sayi3)
+
+        let sifir = 1;
+        let sonuc = Boolean(sifir);
+        console.log(sonuc);
+
+
+        let a = 5;
+        let b = "5";
+
+        let c = a + b;
+        let d = a * b;
+        let e = a % b;
+
+        let f = (a<b) && (a<0);
+        let g = (a === b);
+
+        console.log(g);
+       
+        MATH METODLARI
+
+        let sayi = -5.3;
+
+        console.log(Math.abs(sayi));
+        console.log(Math.ceil(sayi));
+        console.log(Math.floor(sayi));
+        console.log(Math.round(sayi));
+        console.log(Math.max(10,20,30));
+        console.log(Math.min(10,20,30));
+        console.log(Math.random());
+        console.log(Math.sqrt(16));
+         
+
+         STRİNG METODLARI
+     
+        let text = "Merhaba Dünya!";
+        console.log(text.length);
+        console.log(text.toUpperCase());
+        console.log(text.toLowerCase());
+        console.log(text.charAt(0));
+        console.log(text.indexOf("Dünya"));
+        console.log(text.includes("Merhaba"));
+        console.log(text.substring(0,7));
+        console.log(text.split(" "));
+        console.log(text.replace("Dünya","Evren"));
+
+
+        let isim = "Ahmet";
+        let yas = 37;
+        let mesaj = `Merhaba, benim adım ${isim} ve ${yas} yaşındayım`;
+
+        console.log(mesaj);
+
+
+        let dizi = [1,2,3,4,5];
+        console.log(dizi.length);
+        dizi.push(6);
+        console.log(dizi);
+        dizi.pop();
+        console.log(dizi);
+        dizi.shift();
+        console.log(dizi);
+        dizi.unshift(1);
+        console.log(dizi);
+        console.log(dizi.indexOf(3));
+        console.log(dizi.includes(4));
+
+        let yeniDizi = dizi.concat([6,7,8]);
+        console.log(yeniDizi);
+
+        console.log(dizi.join("-"));
+        console.log(dizi.slice(1,3));
+
+        dizi.splice(2,0,10);
+        console.log(dizi);
+
+
+
+        let kisi = {
+            isim: "Ahmet",
+            yas: 37,
+            meslek: "Yazılım",
+        }
+        console.log(kisi.isim);
+
+        kisi.soyisim= "Kaya";
+        console.log(kisi.soyisim);
+
+        delete kisi.meslek;
+        console.log(kisi.meslek);
+
+
+        let simdi = new Date();
+        console.log(simdi);
+        let yil = simdi.getFullYear();
+        console.log(yil);
+        let mount = simdi.getMonth();
+        console.log(mount+1);
+
+         
+        let x = 20;
+        let y = 21;
+
+        if(x > y){
+            console.log("x, y'den büyüktür.");
+        }
+        else if(x < y){
+            console.log("x, y'den küçüktür.");
+        }
+        else{
+            console.log("x ve y eşittir");
+        }
+
+        let yas = 18;
+        let mesaj = (yas >= 18) ? "Yetişkin." : "Çocuk";
+        console.log(mesaj);
+
+
+
+        let gun = 3;
+        let gunadi;
+
+        switch(gun){
+            case 1:
+                gunadi = "Pazartesi";
+                break;
+            case 3: 
+                gunadi = "Çarşamba";
+                break;
+            default:
+                gunadi = "Geçersiz Gün";
+        }
+        console.log(gunadi);
+
+
+
+        function selamla(isim){
+            return `Merhaba, ${isim}`;
+        }
+        console.log(selamla("Ahmet"));
+
+        (function(){
+            console.log("Bu bir IIFE fonksiyonudur.");
+        })();
+
+        setTimeout(function(){
+            console.log("Bu bir anonim fonksiyondur.");
+        },1000);
+
+                 
+
+        let i = 0;
+        while(i<5){
+            console.log(i);
+            i++;
+        }
+
+        for(let k = 0; k<5 ; k++){
+            console.log(k);
+        }
+
+        
+        let globalDegisken = "Bu bir global değişklendir.";
+
+        function fonksiyon(){
+            console.log(globalDegisken);
+        }
+
+        fonksiyon();
+  */
+        function fonksiyon2(){
+            let yerelDegisken = "Bu bir yerel değişkendir.";
+            console.log(yerelDegisken);
+        }
+        fonksiyon2();
+        console.log(yerelDegisken);
+    </script>
+  </body> 
+</html>
