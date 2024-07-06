@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .kutu{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="baslik">DOM Manipülasyonları</h1>
+    <div class="kutu" id="kutu1">Kutu 1</div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+    <ul id="liste">
+        <li>Öğe 1</li>
+        <li>Öğe 2</li>
+        <li>Öğe 3</li>
+    </ul>
+    <button onclick="Tiklandi()">Tıkla</button>
+
+    <script>
+        console.log("Document Object:", document);
+        console.log("Sayfa Başlığı:", document.title);
+
+        let baslik = document.getElementById("baslik");
+        let kutular = document.getElementsByClassName("kutu");
+        let paragraf = document.getElementsByTagName("p");
+        let ilkKutu = document.querySelector(".kutu");
+        let tumKutular = document.querySelectorAll(".kutu");
+
+        console.log("Başlık:",baslik);
+        console.log("Kutular:",kutular);
+        console.log("Paragraflar:",paragraf);
+        console.log("İlk Kutu:", ilkKutu);
+        console.log("Tüm Kutular:", tumKutular);
+
+        baslik.style.color = "Blue";
+        baslik.style.fontSize = "24px";
+        ilkKutu.style.backgroundColor = "yellow";
+
+        let liste = document.getElementById("liste");
+        let ilkEleman = liste.firstChild;
+        let sonEleman = liste.lastChild;
+        let ikinciEleman = ilkEleman.nextSibling;
+
+        console.log("Listenin Düğümleri:", liste.parentNode);
+        console.log("Listenin Elemanları:", liste.childNodes);
+        console.log("Listenin Elementlerı:", liste.children);
+
+
+        function Tiklandi(){
+            let yeniDiv = document.createElement("div");
+            yeniDiv.textContent = "Bu bir dinamik olarak oluşturulmuş div'dir.";
+            document.body.appendChild(yeniDiv);
+
+            let yeniP = document.createElement("p");
+            let textNode = document.createTextNode("Bu bir paragraf eklentisidir.");
+            yeniP.appendChild(textNode);
+            document.body.insertBefore(yeniP,yeniDiv);
+        }
+
+        let silinecekKutu = document.getElementById("kutu3");
+        silinecekKutu.parentNode.removeChild(silinecekKutu);
+
+        let eskiKutu = document.getElementById("kutu1");
+        let yeniKutu = document.createElement("div");
+        yeniKutu.textContent = "Bu yeni bir kutudur";
+        yeniKutu.className = "kutu";
+        eskiKutu.parentNode.replaceChild(yeniKutu,eskiKutu);
+
+        let link = document.createElement("a");
+        link.textContent="Bu bir bağlantıdır.";
+        link.setAttribute("href","https://www.techcareer.net/");
+        link.setAttribute("target","_blank");
+        document.body.appendChild(link);
+
+        let mevcutHref = link.getAttribute("href");
+        console.log("Link Href:", mevcutHref);
+
+        link.removeAttribute("target");
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
