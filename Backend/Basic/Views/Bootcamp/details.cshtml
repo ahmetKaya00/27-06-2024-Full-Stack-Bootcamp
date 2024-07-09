@@ -1,0 +1,23 @@
+﻿@model Bootcamp
+ <div class="card mb-3" id="@Model.Id">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/img/@Model.Image" alt="" class="img-fluid rounded-start">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <a asp-controller="Bootcamp" asp-action="Details" asp-route-id = "@Model.Id">
+                    <h2 class="card-title">@Model.Title</h2>
+                    </a>
+                    <p class="card-text">@Model.Description</p>
+                    <div>
+                        @if(Model.Tags != null){
+                        @foreach(var tag in Model.Tags){
+                            <span class="badge bg-success">@tag</span>
+                        }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,8 @@
+@model List<Bootcamp>
+
+@foreach (var bootcamp in Model)
+{
+   @if(bootcamp.isActive){
+   @await Html.PartialAsync("_Bootcamp",bootcamp);
+   }
+}
