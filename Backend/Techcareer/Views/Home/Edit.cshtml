@@ -1,0 +1,43 @@
+﻿@model Product
+
+<form asp-controller="Home" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All"></div>
+    <input type="hidden" asp-for="ProductId">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" type="text" class="form-control">
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" type="text" class="form-control">
+        <span asp-validation-for="Description"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Clock" class="form-label"></label>
+        <input asp-for="Clock" type="text" class="form-control">
+        <span asp-validation-for="Clock"></span>
+    </div>
+    <div class="input-group mb-3">
+        <input type="file" name="imageFile" id="imageFile" class="form-control">
+    </div>
+    <div>
+        <img src="~/img/@Model.Image" style="width: 100px;" alt="">
+        <input type="hidden" asp-for="@Model.Image">
+    </div>
+    <div class="mb-3">
+        <label asp-for="CategoryId" class="form-label"></label>
+        <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.Categories">
+            <option value="0">Hepsi</option>
+        </select>
+        <span asp-validation-for="CategoryId"></span>
+
+    </div>
+    <div class="mb-3">
+        <input type="checkbox" asp-for="IsActive" class="form-check-input">
+        <label asp-for="IsActive" class="form-check-label"></label>
+        <span asp-validation-for="IsActive"></span>
+    </div>
+
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+</form>

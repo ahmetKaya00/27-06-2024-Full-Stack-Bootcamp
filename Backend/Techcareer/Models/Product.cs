@@ -9,12 +9,12 @@ namespace Techcareer.Models{
 
         [Required(ErrorMessage = "Bootcamp adı zorunlu.")]
         [Display(Name="Bootcamp Adı")]
-        public string? Name {get;set;} 
+        public string Name {get;set;} = null!;
 
         [Required(ErrorMessage = "Bootcamp Açıklaması zorunlu.")]
         [Display(Name="Bootcamp Açıklaması")]
-        [StringLength(125, ErrorMessage = "{0} length must be between {2} and {1}.", MinimumLength = 50)] 
-       public string Description {get;set;} = string.Empty;
+        [StringLength(125, ErrorMessage = "{0} length must be between {2} and {1}.", MinimumLength = 10)] 
+       public string Description {get;set;} = null!;
 
         [Required(ErrorMessage = "Bootcamp Saati zorunlu.")]
         [Range(15,50)]

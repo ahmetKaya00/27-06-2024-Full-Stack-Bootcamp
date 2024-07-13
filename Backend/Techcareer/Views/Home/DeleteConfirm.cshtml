@@ -1,0 +1,12 @@
+@model Product
+
+<div>
+    <p>
+        @Model.Name isimli bootcampi silmek istediğinize emin misiniz?
+        <form action="" method="post">
+            <input type="hidden" asp-for="@Model.ProductId">
+            <button class="btn btn-danger" type="submit">Evet</button>
+            <a href="/" class="btn btn-secondary">Hayır</a>
+        </form>
+    </p>
+</div>
