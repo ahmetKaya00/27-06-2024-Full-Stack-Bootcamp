@@ -1,0 +1,29 @@
+@model IEnumerable<BootcampKayit>
+
+
+    <h2>Öğrenci Bootcamp Listesi</h2>
+    <a asp-controller="BootcampKayit" asp-action="Create" class="btn btn-primary">Öğrenci Ekle</a>
+<hr>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th style="width: 150px;">@Html.DisplayNameFor(m=>m.KayitId)</th>
+                <th>@Html.DisplayNameFor(m=>m.Ogrenci.OgrenciAd)</th>
+                <th>@Html.DisplayNameFor(m=>m.Bootcamp.Baslik)</th>
+                <th style="width: 140px;">Settigns</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model){
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.KayitId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Ogrenci.AdSoyad)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Bootcamp.Baslik)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id=""  class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -4,24 +4,24 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DBTechcareer.Controllers{
 
-    public class OgrenciController : Controller{
+    public class EgitmenController : Controller{
 
         private readonly DataContext _context;
-        public OgrenciController(DataContext context){
+        public EgitmenController(DataContext context){
             _context = context;
         }
 
         public async Task<IActionResult> Index(){
-            var ogrenciler = await _context.Ogrenciler.ToListAsync();
-            return View(ogrenciler);
+            var Egitmenler = await _context.Egitmenler.ToListAsync();
+            return View(Egitmenler);
         }
         public IActionResult Create(){
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult>Create(Ogrenci model){
-            _context.Ogrenciler.Add(model);
+        public async Task<IActionResult>Create(Egitmen model){
+            _context.Egitmenler.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
@@ -31,19 +31,19 @@ namespace DBTechcareer.Controllers{
             if(id == null){
                 return NotFound();
             }
-           // var ogr = await _context.Ogrenciler.FindAsync(id);
-            var ogr = await _context.Ogrenciler.Include(b=>b.KursKayit).ThenInclude(b=>b.Bootcamp).FirstOrDefaultAsync(o => o.OgrenciId == id);
+           // var ogr = await _context.Egitmenler.FindAsync(id);
+            var egt = await _context.Egitmenler.Include(b=>b.Bootcamp).FirstOrDefaultAsync(o => o.EgitmenId == id);
 
-            if(ogr == null){
+            if(egt == null){
                 return NotFound();
             }
-            return View(ogr);
+            return View(egt);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit (int id, Ogrenci model){
-            if(id != model.OgrenciId){
+        public async Task<IActionResult> Edit (int id, Egitmen model){
+            if(id != model.EgitmenId){
                 return NotFound();
             }
             if(ModelState.IsValid){
@@ -54,7 +54,7 @@ namespace DBTechcareer.Controllers{
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if(!_context.Ogrenciler.Any(o=>o.OgrenciId == model.OgrenciId)){
+                    if(!_context.Egitmenler.Any(o=>o.EgitmenId == model.EgitmenId)){
                         return NotFound();
                     }else{
                         throw;
@@ -72,23 +72,23 @@ namespace DBTechcareer.Controllers{
                 return NotFound();
             }
 
-            var ogrenci = await _context.Ogrenciler.FindAsync(id);
-            if(ogrenci == null){
+            var Egitmen = await _context.Egitmenler.FindAsync(id);
+            if(Egitmen == null){
                 return NotFound();
             }
 
-            return View(ogrenci);
+            return View(Egitmen);
         }
 
         [HttpPost]
         public async Task<IActionResult>Delete([FromForm]int id){
-            var ogrenci = await _context.Ogrenciler.FindAsync(id);
+            var Egitmen = await _context.Egitmenler.FindAsync(id);
             
-            if(ogrenci == null){
+            if(Egitmen == null){
                 return NotFound();
             }
 
-            _context.Ogrenciler.Remove(ogrenci);
+            _context.Egitmenler.Remove(Egitmen);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
 

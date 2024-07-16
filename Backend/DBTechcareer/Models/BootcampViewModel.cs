@@ -1,15 +1,13 @@
-using System.ComponentModel.DataAnnotations;
+using DBTechcareer.Data;
 
-namespace DBTechcareer.Data
+namespace DBTechcareer.Models
 {
 
-    public class Bootcamp
+    public class BootcampViewModel
     {
-        [Key]
         public int BootcampId { get; set; }
         public string? Baslik { get; set; }
         public int? EgitmenId {get;set;}
-        public Egitmen Egitmen {get;set;} = null!;
         public ICollection<BootcampKayit> KursKayit { get; set; } = new List<BootcampKayit>();
 
     }

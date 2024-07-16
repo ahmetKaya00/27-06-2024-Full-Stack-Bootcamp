@@ -18,6 +18,46 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kaya3\Documents\GitHub\27-06-2024-Full-Stack-Bootcamp\Backend\DBTechcareer
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/BootcampKayit/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBLYXlpdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/BootcampKayit/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBLYXlpdFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Bootcamp/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Bootcamp/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Bootcamp/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Bootcamp/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vdGNhbXBcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Egitmen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWdpdG1lblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Egitmen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWdpdG1lblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Egitmen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWdpdG1lblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Egitmen/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWdpdG1lblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +68,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Ogrenci/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Ogrenci/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Ogrenci/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Ogrenci/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/DBTechcareer/Views/Shared/Error.cshtml]
