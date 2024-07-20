@@ -18,8 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kaya3\Documents\GitHub\27-06-2024-Full-Stack-Bootcamp\Backend\BlogApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/BlogApp/Views/Posts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/BlogApp/Views/Posts/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/BlogApp/Views/Shared/Components/NewPosts/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmV3UG9zdHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/BlogApp/Views/Shared/Components/TagsMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnc01lbnVcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kaya3/Documents/GitHub/27-06-2024-Full-Stack-Bootcamp/Backend/BlogApp/Views/Shared/_Layout.cshtml]

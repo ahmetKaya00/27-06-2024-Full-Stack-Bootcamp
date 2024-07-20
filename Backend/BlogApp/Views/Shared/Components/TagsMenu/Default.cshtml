@@ -1,0 +1,15 @@
+@model List<Tag>
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Tags</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-inline d-flex flex-wrap gap-2">
+                    @foreach(var tag in Model){
+                        <li class="list-inline-item">
+                            <a href="/posts/tag/@tag.Url" class="btn btn-outline-secondary btn-sm">@tag.Text</a>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>

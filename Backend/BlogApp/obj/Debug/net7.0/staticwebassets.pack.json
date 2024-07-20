@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets\\img\\3.png"
     },
     {
+      "Id": "C:\\Users\\Kaya3\\Documents\\GitHub\\27-06-2024-Full-Stack-Bootcamp\\Backend\\BlogApp\\wwwroot\\img\\avatar.jpg",
+      "PackagePath": "staticwebassets\\img\\avatar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kaya3\\Documents\\GitHub\\27-06-2024-Full-Stack-Bootcamp\\Backend\\BlogApp\\wwwroot\\img\\p1.jpg",
+      "PackagePath": "staticwebassets\\img\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Kaya3\\Documents\\GitHub\\27-06-2024-Full-Stack-Bootcamp\\Backend\\BlogApp\\wwwroot\\img\\p2.jpg",
+      "PackagePath": "staticwebassets\\img\\p2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Kaya3\\Documents\\GitHub\\27-06-2024-Full-Stack-Bootcamp\\Backend\\BlogApp\\wwwroot\\lib\\bootstrap-,cons\\bootstrap-icons.svg",
       "PackagePath": "staticwebassets\\lib\\bootstrap-,cons\\bootstrap-icons.svg"
     },
