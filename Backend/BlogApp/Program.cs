@@ -2,28 +2,36 @@ using BlogApp.Data;
 using BlogApp.Data.Abstract;
 using BlogApp.Data.Concrete;
 using BlogApp.Data.Concrete.EfCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<BlogContext>(options=>{
-    options.UseSqlite(builder.Configuration["ConnectionStrings:sql_connection"]);
+builder.Services.AddDbContext<BlogContext>(options=>{options.UseSqlite(builder.Configuration["ConnectionStrings:sql_connection"]);
 });
 
 builder.Services.AddScoped<IPostRepository,EfPostRepository>();
 builder.Services.AddScoped<ITagRepository,EfTagRepository>();
+builder.Services.AddScoped<ICommentRepository,EfCommentRepository>();
+builder.Services.AddScoped<IUserRepository,EfUserRepository>();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 
 var app = builder.Build();
 
 app.UseStaticFiles();
 
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+
 SeedData.TestVerileriniDoldur(app);
 
 app.MapControllerRoute(
     name: "posts_details",
-    pattern: "posts/{url}",
+    pattern: "posts/details/{url}",
     defaults: new{controller = "Posts", action= "Details"}
 );
 
