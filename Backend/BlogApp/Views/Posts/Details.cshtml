@@ -10,7 +10,11 @@
                 }
             </div>
             <img src="~/img/@Model.Image" class="img-fluid rounded" alt="">
-            <div>@Model.Content</div>
+            <ul class="list-inline my-3">
+                <li class="list-inline-item"><i class="bi bi-calender">@Model.PublishedOn.ToString("d")</i></li>
+                <li class="list-inline-item"><i class="bi bi-person-circle"><a href="/profile/@Model.User.UserName">@Model.User.Name</a></i></li>
+            </ul>
+            <div>@Html.Raw(@Model.Content)</div>
         </div>
         <div class="bg-white mt-3">
             <div class="card border-0">
@@ -24,7 +28,11 @@
                             <img src="/img/@comment.User.Image" class="avatar rounded-circle float-start me-3" alt="">
                             <div>
                             <div class="mb-2 d-flex">
-                                <h6 class="me-2">@comment.User.UserName</h6>
+                                <h6 class="me-2">
+                                    <a href="/profile/@comment.User.UserName">
+                                    @comment.User.UserName
+                                    </a>
+                                    </h6>
                                 <small>@comment.PublishedOn.ToString("G")</small>
                             </div>
                             <p>@comment.Text</p>
@@ -50,7 +58,6 @@
                     }else{
                         <p>Yorum yapabilmek için giriş yapınız. <a href="/users/login">Login</a></p>
                     }
-                    
                 </div>
             </div>
         </div>

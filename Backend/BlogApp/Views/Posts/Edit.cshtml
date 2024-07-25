@@ -1,0 +1,64 @@
+@model PostCreateViewModel
+
+        <form asp-controller="Posts" asp-action="Edit" method="post">
+<div class="row">
+    <div class="col-9">
+        <div class="bg-white p-4">
+
+        <h1>Post Edit</h1>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PostId">
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label"></label>
+                <input asp-for="Title" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <input asp-for="Description" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Url" class="form-label"></label>
+                <input asp-for="Url" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label asp-for="Content" class="form-label"></label>
+                <textarea asp-for="Content" class="form-control"></textarea>
+            </div>
+            @if(User.FindFirstValue(ClaimTypes.Role) == "admin"){
+                <div class="form-check mb-3">
+                    <input asp-for="IsActive" class="form-check-input">
+                    <label asp-for="IsActive" class="form-check-label"></label>
+                </div>
+            }
+            <button type="submit" class="btn btn-primary">Create</button>
+        
+        </div>
+    </div>
+    <div class="col-3">
+        <div class="bg-white p-4">
+            @foreach(var tag in ViewBag.Tags){
+                <div class="form-check">
+                    <input 
+                    class="form-check-input" 
+                    name="tagIds"
+                    type="checkbox" 
+                    value="@tag.TagId" 
+                    id="tag_@tag.TagId"
+                    @(Model.Tags.Any(i=>i.TagId == tag.TagId)? "checked" : "")>
+                    <label for="tag_@tag.TagId" class="form-check-label">
+                        @tag.Text
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+</form>
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/7.2.1/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: '#Content'
+        });
+    </script>
+}
